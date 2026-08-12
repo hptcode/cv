@@ -1,46 +1,62 @@
-/* Minimal, print-friendly resume styles */
+/* Base styles matching patrickho.ca/resume */
 
-* {
+/* ===== Variables ===== */
+:root {
+  --color-text:       #2d3436;
+  --color-text-light: #636e72;
+  --color-accent:     #0984e3;
+  --color-accent-dark:#0652a0;
+  --color-bg:         #ffffff;
+  --color-bg-alt:     #f5f6fa;
+  --color-border:     #dfe6e9;
+  --color-skill-bg:   #dfe6e9;
+  --font-body:  "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  --font-mono:  "Cascadia Code", "Fira Code", "Source Code Pro", Consolas, monospace;
+  --max-width:  780px;
+  --radius:     6px;
+}
+
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 html {
+  font-size: 16px;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #222;
-  background: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: 700;
-  color: #000;
-}
-
-p {
-  margin: 0 0 0.5rem;
-}
-
-ul {
-  margin: 0;
-  padding-left: 1.25rem;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background: var(--color-bg-alt);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  color: #054c7b;
+  color: var(--color-accent);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
-a:hover {
+a:hover,
+a:focus {
+  color: var(--color-accent-dark);
   text-decoration: underline;
 }
 
-strong {
-  color: #000;
+ul {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  font: inherit;
 }

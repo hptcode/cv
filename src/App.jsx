@@ -12,8 +12,7 @@ const contact = {
 }
 
 const summary = [
-  'Experienced IT Infrastructure and Systems Specialist with 20+ years of experience supporting enterprise systems, UNIX/Linux/Windows environments, networking infrastructure, Oracle engineered systems, and customer-facing technical operations.',
-  'Proven track record in systems integration, troubleshooting, cloud infrastructure integration, and enterprise deployments — along with a strong ability to support mission-critical environments, deliver infrastructure projects, and provide technical training and documentation.',
+  'Experienced IT Infrastructure and Systems Specialist with 20+ years of experience supporting enterprise systems, UNIX/Linux/Windows environments, networking infrastructure, Oracle engineered systems, and customer-facing technical operations. Proven track record in systems integration, troubleshooting, cloud infrastructure integration, and enterprise deployments — along with a strong ability to support mission-critical environments, deliver infrastructure projects, and provide technical training and documentation.',
   'Deeply interested in modern DevOps and self-hosting — deploying containerized applications with Docker and Coolify — and actively exploring AI-powered developer tooling and agents such as Claude Code. Maintains personal open-source projects on GitHub, demonstrating continuous learning and hands-on engineering outside the day job.',
 ]
 
@@ -139,113 +138,114 @@ const additional = [
   'References available upon request',
 ]
 
-function Header() {
-  return (
-    <header>
-      <h1>{contact.name}</h1>
-      <p className="role">{contact.title}</p>
-      <p className="contact">
-        {contact.items.map((item, i) => (
-          <span key={i}>
-            {i > 0 && <span aria-hidden="true"> · </span>}
-            {item}
-          </span>
-        ))}
-      </p>
-    </header>
-  )
-}
-
 function Section({ title, children }) {
   return (
-    <section>
-      <h2>{title}</h2>
+    <section className="section">
+      <h2 className="section-heading">{title}</h2>
       {children}
     </section>
   )
 }
 
+function Header() {
+  return (
+    <header className="header">
+      <h1 className="name">{contact.name}</h1>
+      <p className="title">{contact.title}</p>
+      <ul className="contact">
+        {contact.items.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
+      </ul>
+    </header>
+  )
+}
+
 function ExperienceItem({ company, title, years, points }) {
   return (
-    <div className="job">
-      <div className="job-head">
-        <strong className="job-title">{company} — {title}</strong>
-        <span className="job-years">{years}</span>
+    <article className="job">
+      <div className="job-header">
+        <div className="job-left">
+          <h3 className="job-title">{title}</h3>
+          <p className="job-company">{company}</p>
+        </div>
+        <span className="job-dates">{years}</span>
       </div>
-      <ul>
+      <ul className="job-details">
         {points.map((point, i) => (
           <li key={i}>{point}</li>
         ))}
       </ul>
-    </div>
+    </article>
   )
 }
 
 function App() {
   return (
     <div className="resume">
-      <Header />
+      <div className="resume-card">
+        <Header />
 
-      <Section title="Career Summary">
-        {summary.map((paragraph, i) => (
-          <p key={i}>{paragraph}</p>
-        ))}
-      </Section>
+        <Section title="Career Summary">
+          {summary.map((paragraph, i) => (
+            <p key={i} className="summary">{paragraph}</p>
+          ))}
+        </Section>
 
-      <Section title="Core Skills">
-        <div className="skills-grid">
+        <Section title="Core Skills">
           {skillGroups.map((group) => (
-            <div key={group.label}>
-              <strong>{group.label}</strong>
-              <ul>
+            <div key={group.label} className="skill-group">
+              <span className="skill-group-label">{group.label}</span>
+              <ul className="skills">
                 {group.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
             </div>
           ))}
-        </div>
-      </Section>
+        </Section>
 
-      <Section title="Key Achievements">
-        <ul className="achievements">
-          {achievements.map((item, i) => (
-            <li key={i}>{item}</li>
+        <Section title="Key Achievements">
+          <ul className="achievements">
+            {achievements.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </Section>
+
+        <Section title="Professional Experience">
+          {experience.map((job) => (
+            <ExperienceItem key={job.company} {...job} />
           ))}
-        </ul>
-      </Section>
+        </Section>
 
-      <Section title="Professional Experience">
-        {experience.map((job) => (
-          <ExperienceItem key={job.company} {...job} />
-        ))}
-      </Section>
-
-      <Section title="Open Source &amp; Projects">
-        {openSource.map((project) => (
-          <div key={project.name} className="project">
-            <strong>{project.name}</strong>
-            <p>{project.description}</p>
-            <p className="tags">{project.tags.join(' · ')}</p>
+        <Section title="Open Source &amp; Projects">
+          <div className="project">
+            <p className="project-name">
+              {openSource[0].name}
+            </p>
+            <p className="project-desc">{openSource[0].description}</p>
+            <p className="project-tags">{openSource[0].tags.join(' · ')}</p>
           </div>
-        ))}
-      </Section>
+        </Section>
 
-      <Section title="Education">
-        <p>
-          <strong>{education.degree}</strong>
-          <br />
-          {education.school}
-        </p>
-      </Section>
+        <Section title="Education">
+          <div className="edu-degree">{education.degree}</div>
+          <div className="edu-school">{education.school}</div>
+        </Section>
 
-      <Section title="Additional Information">
-        <ul>
-          {additional.map((item, i) => (
-            <li key={i}>{item}</li>
-          ))}
-        </ul>
-      </Section>
+        <Section title="Additional Information">
+          <ul className="section-list">
+            {additional.map((item, i) => (
+              <li key={i}>{item}</li>
+            ))}
+          </ul>
+        </Section>
+
+        <footer className="footer">
+          <p>&copy; 2026 Patrick Ho</p>
+        </footer>
+      </div>
     </div>
   )
 }

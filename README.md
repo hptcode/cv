@@ -10,9 +10,7 @@ https://hptcode.github.io/cv/
 
 - React 19
 - Vite 8
-- Framer Motion (scroll animations)
-- lucide-react (icons)
-- Tailwind-style utility classes via App.css
+- Plain, print-friendly CSS (single-column layout)
 
 ## Local development
 

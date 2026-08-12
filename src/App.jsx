@@ -5,7 +5,6 @@ const contact = {
   title: 'Systems Support Specialist',
   items: [
     <a key="email" href="mailto:ho_p@yahoo.com">ho_p@yahoo.com</a>,
-    '778-828-8810',
     'Vancouver, BC',
     <a key="github" href="https://github.com/hptcode" target="_blank" rel="noopener noreferrer">github.com/hptcode</a>,
   ],

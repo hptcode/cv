@@ -1,0 +1,71 @@
+/* Additional App-specific styles */
+
+/* Ensure smooth scrolling for anchor links */
+html {
+  scroll-margin-top: 4rem;
+}
+
+/* Hero section specific styles */
+.hero-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Timeline dot animation */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.group:hover .absolute.-left-\[9px\] {
+  animation: pulse 0.3s ease-in-out;
+}
+
+/* Skill card hover effect */
+.bg-card.rounded-xl {
+  transform: translateY(-2px);
+}
+
+.bg-card.rounded-xl:hover {
+  transform: translateY(-4px);
+}
+
+/* Print improvements */
+@media print {
+  .hero-section {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  body {
+    font-size: 11pt;
+  }
+
+  h1 {
+    font-size: 18pt;
+  }
+
+  h2 {
+    font-size: 14pt;
+  }
+
+  /* Force all Framer Motion animated sections fully visible when printing.
+     Animated elements start at opacity:0 and only fade in on scroll,
+     so without this the printed page would omit them. */
+  .motion-div,
+  [style*="opacity: 0"],
+  [style*="opacity:0"] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  main > section,
+  section {
+    break-inside: auto;
+  }
+}

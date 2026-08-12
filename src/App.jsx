@@ -11,8 +11,8 @@ const contact = {
 }
 
 const summary = [
-  'IT Infrastructure and Systems Specialist with 20+ years supporting enterprise systems, UNIX/Linux/Windows environments, networking infrastructure, Oracle engineered systems, and customer-facing technical operations. Work has covered systems integration, troubleshooting, cloud infrastructure integration, and enterprise deployments, along with mission-critical environments, infrastructure projects, and technical training and documentation.',
-  'Interested in modern DevOps and self-hosting, with experience deploying containerized applications using Docker and Coolify and exploring AI-powered developer tooling and agents such as Claude Code and Hermes Agent. Also maintains personal open-source projects on GitHub.',
+  'A systems specialist with over 20 years keeping enterprise IT running—UNIX, Linux, and Windows environments, networking and storage, and Oracle engineered systems. I have worked across systems integration, infrastructure projects, and mission-critical environments, and I enjoy solving hard problems, writing clear documentation, and helping others get up to speed.',
+  'More recently I have focused on modern DevOps and self-hosting, deploying my own containerized apps with Docker and Coolify, experimenting with AI developer tooling like Claude Code, and maintaining open-source projects on GitHub.',
 ]
 
 const skillGroups = [
@@ -21,7 +21,6 @@ const skillGroups = [
     items: [
       'UNIX/Linux Administration',
       'Windows Server',
-      'Solaris',
       'Shell Scripting',
     ],
   },
@@ -30,7 +29,6 @@ const skillGroups = [
     items: [
       'Cisco Multi-site Networks',
       'SAN/NAS Storage',
-      'DNS & Mail Services',
       'Telecom CDR Processing',
     ],
   },
@@ -73,10 +71,10 @@ const skillGroups = [
 ]
 
 const achievements = [
-  'Oracle RAC Cluster Deployment for the 2010 Vancouver Winter Olympics — delivered critical database infrastructure supporting real-time operations during a high-profile international event.',
-  'National Inventory Monitoring System (Sun Microsystems) — designed and maintained a real-time hardware tracking system used by all field engineers across Canada, improving visibility and response times.',
-  'Enterprise Onsite Support for ICBC (2003–2008) — supported mission-critical SAP infrastructure on Sun environments for one of BC’s largest enterprises.',
-  'Telecom Billing Automation (Navigator-Westel) — developed scripts processing thousands of daily CDR records into structured databases for enterprise billing and data warehousing.',
+  'Deployed Oracle RAC clusters for the 2010 Vancouver Winter Olympics, delivering database infrastructure that stayed reliable under real-time, high-load conditions during an international event.',
+  'Designed a national inventory monitoring system at Sun Microsystems—a real-time hardware tracker used by every field engineer across Canada, cutting response times and improving visibility.',
+  'Supported mission-critical SAP infrastructure for ICBC (2003–2008), one of BC’s largest enterprises, on Sun environments.',
+  'Automated telecom billing at Navigator-Westel, processing thousands of daily CDR records into structured databases for enterprise billing and data warehousing.',
 ]
 
 const experience = [
@@ -85,11 +83,11 @@ const experience = [
     title: 'Systems Support Specialist',
     years: '2010 – 2026',
     points: [
-      'Installed, configured, and integrated Oracle engineered systems with Oracle Cloud Infrastructure (OCI), enabling seamless hybrid cloud deployments.',
-      'Implemented OS, SAN, NAS, and backup installation and migration projects for enterprise customers, minimizing downtime and ensuring data integrity.',
-      'Performed diagnostics, maintenance, repairs, and upgrades for Oracle systems, maintaining 99.9%+ uptime for mission-critical environments.',
-      'Deployed Oracle RAC cluster infrastructure supporting the 2010 Vancouver Winter Olympics, delivering real-time database availability under high-load conditions.',
-      'Created comprehensive technical documentation and training materials for customers and partners, improving self-service resolution rates.',
+      'Integrated Oracle engineered systems with Oracle Cloud Infrastructure (OCI), standing up seamless hybrid cloud deployments for customers.',
+      'Led OS, SAN, NAS, and backup install and migration projects for enterprise customers, keeping downtime minimal and data intact.',
+      'Triaged and resolved issues across Oracle systems, sustaining 99.9%+ uptime for mission-critical environments.',
+      'Deployed Oracle RAC cluster infrastructure for the 2010 Vancouver Winter Olympics, keeping databases available in real time under heavy load.',
+      'Wrote technical documentation and ran training sessions so customers and partners resolved more issues on their own.',
     ],
   },
   {
@@ -97,11 +95,11 @@ const experience = [
     title: 'Systems Support Engineer — Global Services',
     years: '1999 – 2010',
     points: [
-      'Provided advanced technical support for enterprise customer environments across Canada, resolving complex hardware, software, and infrastructure issues.',
-      'Supported enterprise server and storage infrastructure projects for crown corporations, telecommunication companies, retail chains like Best Buy, and many small and mid-sized businesses.',
-      'Delivered onsite enterprise UNIX support for ICBC (2003–2008), maintaining infrastructure for mission-critical SAP applications on Sun Solaris environments.',
-      'Designed and maintained a national inventory monitoring system providing real-time hardware tracking and reporting for all Canadian field engineers.',
-      'Delivered technical training, mentoring, and documentation for support teams, elevating team capability and knowledge retention.',
+      'Resolved complex hardware, software, and infrastructure issues for enterprise customers across Canada as a senior escalation resource.',
+      'Delivered server and storage infrastructure projects for crown corporations, telecommunication companies, retail chains like Best Buy, and many small and mid-sized businesses.',
+      'Provided onsite enterprise UNIX support for ICBC (2003–2008), keeping mission-critical SAP applications on Solaris running smoothly.',
+      'Designed and maintained a national inventory monitoring system giving every Canadian field engineer real-time hardware tracking and reporting.',
+      'Trained and mentored support teams and wrote documentation that raised the team’s overall capability and knowledge.',
     ],
   },
   {
@@ -109,10 +107,10 @@ const experience = [
     title: 'Senior Systems & Network Administrator',
     years: '1997 – 1999',
     points: [
-      'Managed Cisco-based multi-site infrastructure supporting 100+ users across 3 remote locations, ensuring reliable connectivity and services.',
-      'Administered 20+ enterprise systems including DNS, mail servers, Sybase databases, Remedy ITSM, and authentication services on Solaris, Linux, Novell, and Windows platforms.',
-      'Developed automation scripts for processing thousands of daily telecom CDR (Call Detail Record) entries into structured databases, supporting enterprise billing and data warehousing operations.',
-      'Managed helpdesk operations and coordinated infrastructure relocation projects, maintaining service continuity throughout transitions.',
+      'Managed Cisco multi-site infrastructure for 100+ users across three remote locations, keeping connectivity and services reliable.',
+      'Administered 20+ enterprise systems—DNS, mail, Sybase databases, Remedy ITSM, and authentication—across Solaris, Linux, Novell, and Windows.',
+      'Automated the processing of thousands of daily telecom CDR records into structured databases for enterprise billing and data warehousing.',
+      'Ran helpdesk operations and coordinated infrastructure relocations, keeping services continuous through every transition.',
     ],
   },
 ]

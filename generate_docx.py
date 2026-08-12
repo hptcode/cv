@@ -178,7 +178,7 @@ def main():
             'Wrote technical documentation and ran training sessions so customers and partners resolved more issues on their own.',
         ]),
         ('Systems Support Engineer — Global Services', 'Sun Microsystems', '1999 – 2010', [
-            'Resolved complex hardware, software, and infrastructure issues for enterprise customers across Canada as a senior escalation resource.',
+            'Resolved complex hardware, software, and infrastructure issues for enterprise customers across Canada as a second level escalation resource.',
             'Delivered server and storage infrastructure projects for crown corporations, telecommunication companies, retail chains like Best Buy, and many small and mid-sized businesses.',
             'Provided onsite enterprise UNIX support for ICBC (2003–2008), keeping mission-critical SAP applications on Solaris running smoothly.',
             'Designed and maintained a national inventory monitoring system giving every Canadian field engineer real-time hardware tracking and reporting.',

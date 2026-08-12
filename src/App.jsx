@@ -12,8 +12,8 @@ const contact = {
 }
 
 const summary = [
-  'Experienced IT Infrastructure and Systems Specialist with 20+ years of experience supporting enterprise systems, UNIX/Linux/Windows environments, networking infrastructure, Oracle engineered systems, and customer-facing technical operations. Proven track record in systems integration, troubleshooting, cloud infrastructure integration, and enterprise deployments — along with a strong ability to support mission-critical environments, deliver infrastructure projects, and provide technical training and documentation.',
-  'Deeply interested in modern DevOps and self-hosting — deploying containerized applications with Docker and Coolify — and actively exploring AI-powered developer tooling and agents such as Claude Code. Maintains personal open-source projects on GitHub, demonstrating continuous learning and hands-on engineering.',
+  'IT Infrastructure and Systems Specialist with 20+ years supporting enterprise systems, UNIX/Linux/Windows environments, networking infrastructure, Oracle engineered systems, and customer-facing technical operations. Work has covered systems integration, troubleshooting, cloud infrastructure integration, and enterprise deployments, along with mission-critical environments, infrastructure projects, and technical training and documentation.',
+  'Interested in modern DevOps and self-hosting, with experience deploying containerized applications using Docker and Coolify and exploring AI-powered developer tooling and agents such as Claude Code. Also maintains personal open-source projects on GitHub.',
 ]
 
 const skillGroups = [

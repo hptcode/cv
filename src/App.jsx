@@ -98,7 +98,7 @@ const experience = [
     years: '1999 – 2010',
     points: [
       'Provided advanced technical support for enterprise customer environments across Canada, resolving complex hardware, software, and infrastructure issues.',
-      'Supported enterprise server and storage infrastructure projects for major customers, including provincial crown corporations and financial institutions.',
+      'Supported enterprise server and storage infrastructure projects for crown corporations, telecommunication companies, retail chains like Best Buy, and many small and mid-sized businesses.',
       'Delivered onsite enterprise UNIX support for ICBC (2003–2008), maintaining infrastructure for mission-critical SAP applications on Sun Solaris environments.',
       'Designed and maintained a national inventory monitoring system providing real-time hardware tracking and reporting for all Canadian field engineers.',
       'Delivered technical training, mentoring, and documentation for support teams, elevating team capability and knowledge retention.',

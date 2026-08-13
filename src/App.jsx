@@ -95,7 +95,7 @@ const experience = [
     title: 'Systems Support Engineer — Global Services',
     years: '1999 – 2010',
     points: [
-      'Resolved complex hardware, software, and infrastructure issues for enterprise customers across Canada as a second level escalation resource.',
+      'Resolved complex hardware, software, and infrastructure issues for enterprise customers across Western Canada as a second level escalation resource.',
       'Delivered server and storage infrastructure projects for crown corporations, telecommunication companies, retail chains like Best Buy, and many small and mid-sized businesses.',
       'Provided onsite enterprise UNIX support for ICBC (2003–2008), keeping mission-critical SAP applications on Solaris running smoothly.',
       'Designed and maintained a national inventory monitoring system giving every Canadian field engineer real-time hardware tracking and reporting.',

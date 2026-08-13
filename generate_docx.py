@@ -119,7 +119,7 @@ def main():
         ('Systems & Platforms', ['UNIX/Linux Administration', 'Windows Server', 'Shell Scripting']),
         ('Network & Infrastructure', ['Cisco Multi-site Networks', 'SAN/NAS Storage', 'Telecom CDR Processing']),
         ('Virtualization & Containers', ['Docker Containerization', 'Virtualization (VMware, KVM, Oracle VM)', 'Hypervisor Management', 'CI/CD Pipelines']),
-        ('Cloud & Databases', ['Oracle Cloud (OCI)', 'Oracle RAC Clusters', 'Oracle Engineered Systems', 'Database Support (Sybase, Oracle)']),
+        ('Cloud & Databases', ['Oracle Cloud (OCI)', 'Oracle RAC Clusters', 'Oracle Engineered Systems', 'Database Support (Postgres, Oracle)']),
         ('Self-Hosted & Dev Tools', ['Self-Hosted Deployment & Coolify (PaaS)', 'AI-Powered Dev Tools & Agents (Claude Code, Hermes)', 'Open-Source Development & GitHub']),
         ('Professional Skills', ['Customer-Facing Support', 'Problem Diagnosis & Resolution', 'Change Management']),
     ]

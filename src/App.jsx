@@ -47,7 +47,7 @@ const skillGroups = [
       'Oracle Cloud (OCI)',
       'Oracle RAC Clusters',
       'Oracle Engineered Systems',
-      'Database Support (Sybase, Oracle)',
+      'Database Support (Postgres, Oracle)',
     ],
   },
   {
